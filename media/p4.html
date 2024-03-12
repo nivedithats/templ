@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS_BASICS</title>
+   <style>
+    button{
+        border: none;
+        padding: 10px;
+        background-color: cornflowerblue;
+        color: #fff;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    button:hover{
+        opacity: 0.7;
+    }
+   </style>
+</head>
+<body>
+    <center>
+        <h1>calling external javascript files...!</h1>
+        <button onclick="test()" id="testBtn">Click to call function</button>
+    </center>
+   
+
+   <!-- <script>
+     function test(){ //named function
+        alert('Hi this is the test function...!')
+        document.getElementById('testBtn').innerText = "button is clicked"
+    }
+    
+    
+   </script> -->
+
+   <script src="../js/script.js"></script>
+</body>
+</html>

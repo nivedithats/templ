@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body>
+    <center>
+        <h1>Loops</h1>
+        <ol>
+            <li>While loop</li>
+            <li>Do While</li>
+            <li>For loop</li>
+        </ol>
+        <div class="cintainer">
+            <div class="card">
+                <label for="">Enter a Number</label>
+                <input type="number" placeholder="Enter a number " id="number">
+                <button onclick="checkDowhileDecrement()">Check DOWhile Loop</button>
+                <div id="result"></div>
+            </div>
+        </div>
+    </center>
+    <script>
+        console.log("hello")
+        console.log("hello")
+
+        //loops
+        //initialization,condithion,increment
+    function checkDowhile(){
+        let i = document.getElementById('number').value;
+        let result = document.getElementById('result');
+        result.innerHTML = "";
+       // while(i<=5){
+        do{
+
+        
+          console.log("hello",i)
+          result.innerHTML += `<h1>hello ${i}</h1>`
+          i++;
+        }
+        while(i<=5)
+    }
+    let i = 0;
+    do{
+        console.log("hello",i)
+        i++;
+
+    }while(i<=5)
+
+    //output: hello i=1, hello i=2,hello i=3,hello i=4, hello i=5,hello i =6
+
+    //function checkwhileDecrement(){
+      //  let i = document.getElementById('number').value;
+        //let result = document.getElementById('result');
+        //while(i>0){
+          //  console.log("hello",i)
+            //if (i==3){
+              //  result.innerHTML += `<h1 style="color:green;">hello ${i}</h1>`
+            //}
+            //result.innerHTML += `<h1>hello ${i}</h1>`
+            //i--;
+       // }
+    //}
+
+
+
+
+
+    </script>
+</body>
+</html>

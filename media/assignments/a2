@@ -1,0 +1,20 @@
+inner html and if or switch
+-create one select tag add ssome topics inside the select tag (tech, news ect...)
+if user selected that one option display one complete article in one section design the aricle using css
+
+-create a form registration form if user not entered value in name field display erro meaage on bottom of input add some red border to name fields 
+like this way phone number if user entered text in number fiels display error or user entered below or above the 10 digits display error msg and add red border to inout field
+
+-hint
+input = 988675633
+Number(input) //988675633
+
+input = 876565jhgh
+Number(input) //NaN
+
+if(Number(input)==NaN){
+    display error
+    if(number.length<10|| number.length>10){
+        display error
+    }
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>example</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+           .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+           }
+           .card{
+            width: 250px;
+            padding: 10px;
+            box-shadow: 0px 0px 10px #ccc;
+        }
+        .card button{
+            width: 100%;
+            padding: 10px;
+            border-radius: 10px;
+            border: none;
+            background-color: #f7152c;
+            color: #fff;
+
+        }
+           .card input{
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 10px;
+            outline: none;
+            border: none;
+           border: 1px solid #ccc;
+           border-radius: 10px;
+            
+}
+           .card h2{
+            margin-bottom: 20px;
+
+           }
+           .card p{
+            width: 100%;
+            min-height: 100px;
+            border: 1px solid #ccc;
+            background-color: #eeeeee;
+            border-radius: 10px;
+            padding: 10px;
+
+
+           }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h2>Calucation</h2>
+            <input type="text " id="fristnumber" placeholder="Enter Frist Number" required>
+            <input type="text " id="secondnumber" placeholder="Enter second Number" required>
+            
+            <button type="button" onclick="hello()">Calucate</button>
+            <span><b>Result</b></span>
+            <p id="result"></p>
+
+        </div>
+    </div>
+    <script>
+      // var fristnumber = "6"
+      //  var secondnumber = "6"
+        //document.getElementById('result').innerText = parseInt(fristnumber) + parseInt(secondnumber)
+              function hello(){
+                var fristnumber = document.getElementById('fristnumber').value;
+                var secondnumber = document.getElementById('secondnumber').value;
+        document.getElementById('result').innerText = parseInt(fristnumber) + parseInt(secondnumber)
+
+
+
+              }
+    </script>
+</body>
+</html>

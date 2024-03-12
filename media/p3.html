@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS_BASICS</title>
+    <style>
+        h1{
+            background-color: chocolate;
+            color: #fff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 30px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h2>javascipt GENERATING OUTPUT</h2>
+    </center>
+    <p id="result"></p>
+    <p id="result2"></p>
+
+    <script>
+        //variable declaration keywords (var, let, const)
+        // let firstNumber = 10;
+        // let lattNumber = 30;
+        // let sum;
+
+        //another example to declare multiple variables suing single keyword
+        let firstNumber = 10, lastNumber = 30, sum;
+       sum = firstNumber + lastNumber; //sum = 10 + 30 output = 40;
+
+       //printing output inside console
+        console.log(sum)
+        document.write('<h1>', sum, '</h1>')
+        document.write(`<h1>the output is ${sum}</h1>`)
+
+        //printing sum variable output insidcode the html tag by selecting that id
+        document.getElementById('result').innerText = "<h1>this is the paragraph printed sum variable output</h1> "+ sum;
+
+        document.getElementById('result2').innerHTML = `<h1>this is the paragraph printed sum variable output ${sum}</h1> `
+
+
+        document.writeln(`<h1>the output is documentln ${sum}</h1>`)
+
+        alert("sum of number"+ sum)
+        alert(`the sum of number ${sum}`)
+
+        confirm(`the sum of number ${sum}`)
+
+        prompt('enter your name')
+
+
+        
+
+    </script>
+    
+</body>
+</html>

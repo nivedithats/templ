@@ -1,0 +1,79 @@
+Sure, here's a basic example of how you can create an HTML form to gather information and then use JavaScript to fill a table with that information:
+
+HTML:
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Form to Table</title>
+</head>
+<body>
+  <form id="infoForm">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name"><br><br>
+    
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email"><br><br>
+    
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age"><br><br>
+    
+    <button type="button" onclick="addRow()">Submit</button>
+  </form>
+
+  <table id="infoTable" border="1">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Age</th>
+      </tr>
+    </thead>
+    <tbody>
+    </tbody>
+  </table>
+
+  <script>
+    
+
+
+JavaScript (script.js):
+javascript
+function addRow() {
+  // Get form values
+  var name = document.getElementById("name").value;
+  var email = document.getElementById("email").value;
+  var age = document.getElementById("age").value;
+  
+  // Create a new row
+  var newRow = document.createElement("tr");
+  
+  // Create cells for the row
+  var nameCell = document.createElement("td");
+  var emailCell = document.createElement("td");
+  var ageCell = document.createElement("td");
+  
+  // Fill cells with form values
+  nameCell.textContent = name;
+  emailCell.textContent = email;
+  ageCell.textContent = age;
+  
+  // Append cells to the row
+  newRow.appendChild(nameCell);
+  newRow.appendChild(emailCell);
+  newRow.appendChild(ageCell);
+  
+  // Append row to the table
+  document.querySelector("#infoTable tbody").appendChild(newRow);
+  
+  // Reset form fields
+  document.getElementById("infoForm").reset();
+}
+</script>
+</body>
+</html>
+
+
+

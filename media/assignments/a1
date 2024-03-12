@@ -1,0 +1,7 @@
+-currency converter website 
+        -display one iuput to enter rupees and display select option to select currency (doller(us)...ect)
+        -after clicking the button convert that entered input value * selected currency (input value = 1rupee and selected currency is doller is 84  = entered value 8 selected currency value = 84 * 2 = 168)
+
+-create simple registration form check if user entered all the fields or not (user name, email, password and confirm password and select course (select tag), gender)
+-check entered password and confirm password is equal or not
+-if name field is not entered apply style like red border and display result in red color

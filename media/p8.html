@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+   *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   }  
+   .container{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+   } 
+   .card{
+    padding: 10px;
+    box-shadow: 0px 0px 10px #ccc;
+   }  
+   .card input{
+    width: 100%;
+    padding: 10px;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border: none;
+    outline: none;
+    border: 1px solid #CCC;
+    border-radius: 10PX;
+
+
+   }
+   .card input:hover{
+    background-color: rgba(255,22,22,0.071);
+
+   }
+   button{
+    width: 100%;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(255,22,22);
+    color: #fff;
+    font-size: 1.1rem;
+   }
+   button:hover{
+    border: 1px solid rgba(255,22,22);
+    background-color: transparent;
+    transition: 0.3s;
+    color: rgba(255,22,22);
+    cursor: pointer;
+   }
+   .card img{
+    width: 100%;
+    border-radius: 10px;
+
+   }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h1>Special date checker</h1>
+            <img src="" alt="" id="image" width="200">
+           <!-- <input type="text " placeholder="Enter date to check special" id="date">
+            <p id="result"> -->
+                <select name="days" id="days">
+                    <option value=""disabled  selected >-------Select days-------</option>
+                    <option value="1">New Year</option>
+                    <option value="26">Republic day</option>
+                    
+                </select>
+
+            
+            <button onclick="specialDateChecker()">Check</button>
+            <!-- <button onclick="checker()">check</button> -->
+        </div>
+    </div>
+    <script>
+        function specialDateChecker(){
+            var date = document.getElementById('date').value;
+            var image = document.getElementById('image');
+
+
+            if(parseInt(date) ==1){
+
+                image.src = "https://img.freepik.com/free-photo/new-year-banner-with-fireworks_23-2149539970.jpg?size=626&ext=jpg&ga=GA1.1.296739576.1702721371&semt=ais"
+                alert('this day is new year.....!')
+
+            }
+            else if (parseInt(date) ==26){
+                    alert('This day is Republic day...!')
+            }
+            else{
+            image.src='https://cdn-icons-png.freepik.com/256/10174/10174383.png?ga=GA1.1.296739576.1702721371&semt=ais'
+                image.style.width = "50px"
+            }
+        }
+        function checker(){
+            var day = document.getElementById('days');
+            var result = document.getElementById('result');
+            
+           if(day.value == ""){
+            day.style.border = "2px solid red"
+            result.innerText = "please select any option"
+            result.style.color = "red"
+             
+            
+            }
+            else if(day == 1){
+                alert('the date of new year is 1st jan')
+            }
+            else if(day == 26){
+                alert('the date of new year is 26th jan')
+            }
+        }
+    </script>
+</body>
+</html>

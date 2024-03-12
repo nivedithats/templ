@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body>
+
+    <center>
+        <h1>LOOPS</h1>
+        <ol>
+            <li>While loop</li>
+            <li>Do While loop</li>
+            <li>For Loop</li>
+        </ol>
+    </center>
+    <div class="container">
+        <div class="card">
+            <label for="">Enter a Number</label>
+            <input type="number" placeholder="Enter a number" id="number">
+            <button onclick="checkDoWhile()" >Check Do While Loop</button>
+            <div id="result"></div>
+        </div>
+    </div>
+    <div id="container">
+
+    </div>
+    <table id="table" border="1" cellpadding="10" cellspacing="0" width="100%">
+        <tr>
+            <th>Name</th>
+            <th>SINO</th>
+            <th>MSG</th>
+        </tr>
+       
+    </table>
+
+    
+
+    <script>
+    
+
+        //loopsu
+        //intilization, condition, increment
+      function checkDoWhile(){
+        let i = document.getElementById('number').value;
+        let result = document.getElementById('container');
+        let table = document.getElementById('table');
+        result.innerHTML = ""
+        do{
+            console.log("hello", i) 
+            result.innerHTML +=  `
+            <div class="card" style="margin-bottom:10px;">
+                <img src="" alt="">
+                <h1>hello ${i}</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta voluptates cum quidem eum sit distinctio hic praesentium perferendis illum asperiores obcaecati dicta ullam, at fugiat odit minima magnam culpa voluptatibus?</p>
+                <button>Order Now</button>
+                </div>
+            `
+            table.innerHTML += `
+            <tr>
+            <td>Bhaskar</td>
+            <td>${i}</td>
+            <td>hello ${i}</td>
+        </tr>
+            `
+            i++;
+        }
+        while(i<=5)
+    }
+    let i = 0;
+    do{
+        console.log("hello", i)
+        i++;
+    } while(i<=5)
+
+    // output: hello i=1, hello i =2, hello i = 3, hello i = 4, hello i = 5, hello i = 6
+
+
+    //   function checkWhileDecrement(){
+    //     let i = document.getElementById('number').value;
+    //     let result = document.getElementById('result');
+    //     while(i>0){
+    //         console.log("hello", i) 
+           
+    //         if(i==3){
+    //             result.innerHTML +=  <h1 style="color:green;">hello ${i}</h1>
+    //         }
+    //         result.innerHTML +=  <h1>hello ${i}</h1>
+    //         i--;
+    //             }
+    //   }
+//hello 1
+//hello 2
+//hello 3
+//hello 4
+//hello 5
+
+
+    </script>
+</body>
+</html>

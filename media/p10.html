@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Assets/Css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h3>Food Price checker</h3>
+            <label for="foodname">Enter Any Food name</label>
+            <select name="food" id="foodname"> 
+                <option value="" disabled selected>--select menu--</option> 
+                <option value="dosa">Dosa</option>
+                <option value="idli">Idli</option>
+                <option value="chapati">Chapati</option>
+                <option value="pizza">pizza</option>
+            </select>
+            <p id="result"></p>
+            <button onclick="foodPriceChecker()">Track Now</button>
+        </div>
+    </div>  
+
+    <script>
+        function foodPriceChecker(){
+            let foodname = document.getElementById('foodname').value; //dosa
+            let result = document.getElementById('result');
+            switch(foodname){
+                case "dosa":
+                    result.innerText = the price of ${foodname} is 120/- only visit now
+                    result.style.color = "green"
+                    result.style.backgroundColor = "rgba(48, 245, 97, 0.174)"
+                    break;
+                case "idli":
+                    result.innerText = the price of ${foodname} is 80/- only visit now
+                    result.style.color = "green"
+                    result.style.backgroundColor = "rgba(48, 245, 97, 0.174)"
+                    break;
+                case "chapati":
+                    result.innerText = the price of ${foodname} is 40/- only visit now
+                    result.style.color = "green"
+                    result.style.backgroundColor = "rgba(48, 245, 97, 0.174)"
+                    break;
+                case "pizza":
+                    result.innerText = the price of ${foodname} is 250/- only visit now
+                    result.style.color = "green"
+                    result.style.backgroundColor = "rgba(48, 245, 97, 0.174)"
+                    break;
+                default:
+                    result.innerText = "your selected food is not available.";
+                    result.style.color = "red"
+                    result.style.backgroundColor = "rgba(255, 22, 22, 0.246)"
+            }
+
+            // if(foodname=="dosa"){
+            //     result.innerText = the price of ${foodname} is 120/- only visit now
+            //         result.style.color = "green"
+            //         result.style.backgroundColor = "rgba(48, 245, 97, 0.174)"
+
+            // }
+            // else if(foodname=="idli"){
+            //     result.innerText = the price of ${foodname} is 80/- only visit now
+            //         result.style.color = "green"
+            //         result.style.backgroundColor = "rgba(48, 245, 97, 0.174)"
+
+            // }
+            // else if(foodname=="chapati"){
+            //     result.innerText = the price of ${foodname} is 50/- only visit now
+            //         result.style.color = "green"
+            //         result.style.backgroundColor = "rgba(48, 245, 97, 0.174)"
+
+            // }
+            // else if(foodname=="pizza"){
+            //     result.innerText = the price of ${foodname} is 250/- only visit now
+            //         result.style.color = "green"
+            //         result.style.backgroundColor = "rgba(48, 245, 97, 0.174)"
+
+            // }
+            // else{
+            //     result.innerText = "your selected food is not available.";
+            //         result.style.color = "red"
+            //         result.style.backgroundColor = "rgba(255, 22, 22, 0.246)"
+            // }
+
+        }
+    </script>
+    
+</body>
+</html>

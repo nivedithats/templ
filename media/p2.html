@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS BASICS</title>
+    <style>
+        *{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        b{
+            background-color: rgb(255, 179, 0);
+            padding: 10px;
+            display: inline-block;
+            border-radius: 100px;
+            border: 2px solid red;
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>JS VARIABLES</h1>
+    </center>
+    <pre>
+        DATATYPES
+        1) Primitive Datatypes
+        2) Non-Primitive Datatypes
+
+        1) Primitive data types
+        -Int(integer) -> It Accepets only Round Numbers (Example: 0-9)
+        float-> It Accepets only decimal value (Example: 10.5, 3.5, 89.5)
+        -Boolean: Eigther TRUE or FALSE
+        -Char -> It Accepets only single charrecter (Example:Apple...)
+        -Void -> returns only Null value
+
+        2) Non-Primitive Datatypes
+        -Array
+        -Structure
+        -Union
+        -Enum
+        -Pointer
+        -Function
+    </pre>
+
+    <script>
+        document.write('This is the javascript basics class iam printing this text using javascipt code <hr>')
+
+        document.write('to declare variables we need to use some keyword (1. var, 2. let, 3.const)')
+        //var, let, const are the keywords (this keywords are used to declare the variables)
+        var firstNumber; //output will be "undefined" why bcz we declared one variable but we are assaigned any value
+        document.write('<br>')
+        document.write('<b>the variable without value</b>', firstNumber, "<br> <hr>")
+
+        //assaigning some value to variable
+        firstNumber = "hello javascript"
+        document.write('<b>the variable with value</b>', "<span style='color:green; font-size:30px;'>", firstNumber, " </span><br> <hr>")
+
+        document.write("<b>With Value: </b>", firstNumber, "<br>")
+
+        document.write("<b>With Value: </b>"+firstNumber+"<br>")
+
+        document.write("<b>With Value: ", firstNumber, "</b><br>")
+        document.write("<b>With Value: "+firstNumber+"</b><br>")
+
+        //document.write(<b>with value: ${firstNumber} </b> <br>) //this is verry useful
+
+       document.write("<b>the var firstNumber type is:</b>${typeof(firstNumber)} <br>")
+        document.write("<b>the var firstNumber type is:</b>", typeof(firstNumber), "<br>" )
+        document.write("<b>the var firstNumber type is:</b>"+ typeof(firstNumber)+ "<br>" )
+
+
+        firstNumber = 10
+        document.write('<b>the variable with valueg</b>', "<span style='color:green; font-size:30px;'>", firstNumber, " </span><br> <hr>")
+
+        document.write("<b>With Value: </b>", firstNumber, "<br>")
+
+        document.write("<b>With Value: </b>"+firstNumber+"<br>")
+
+        document.write("<b>With Value: ", firstNumber, "</b><br>")
+        document.write("<b>With Value: "+firstNumber+"</b><br>")
+
+        //document.write(<b>with value: ${firstNumber} </b> <br>) //this is verry usefull
+
+        document.write("<b>the var firstNumber type is:</b>${typeof(firstNumber)} <br>")
+        document.write("<b>the var firstNumber type is:</b>", typeof(firstNumber), "<br>" )
+        document.write("<b>the var firstNumber type is:</b>"+ typeof(firstNumber)+ "<br>" )
+
+        //checking variable and assaigning diffrent value
+        firstNumber = true
+        document.write('<b>the variable with valueg</b>', "<span style='color:green; font-size:30px;'>", firstNumber, " </span><br> <hr>")
+
+        document.write("<b>With Value: </b>", firstNumber, "<br>")
+
+        document.write("<b>With Value: </b>"+firstNumber+"<br>")
+
+        document.write("<b>With Value: ", firstNumber, "</b><br>")
+        document.write("<b>With Value: "+firstNumber+"</b><br>")
+
+       document.write("<b>with value: ${firstNumber} </b> <br>") //this is verry usefull
+
+        document.write("<b>the var firstNumber type is:</b>", typeof(firstNumber), "<br>")
+        document.write("<b>the var firstNumber type is:</b>", typeof(firstNumber), "<br>" )
+        document.write("<b>the var firstNumber type is:</b>"+ typeof(firstNumber)+ "<br>" )
+    </script>
+    
+</body>
+</html>
